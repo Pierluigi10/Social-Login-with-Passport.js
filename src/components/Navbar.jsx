@@ -1,10 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import avatar from "../images/avatar.png";
 
 const Navbar = () => {
   return (
     <div className="navbar">
-      <span className="logo">Logo Project</span>
+      <span className="logo">
+        <Link className="link" to="/">
+          Logo Project
+        </Link>
+      </span>
       <ul className="list">
         <li className="listItem">
           <img src={avatar} alt="" className="avatar" />
