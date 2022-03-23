@@ -1,8 +1,14 @@
-import "./config.js";
-import express from "express";
-import cookieSession from "cookie-session";
-import passport from "passport";
-import cors from "cors";
+// import "./config.js";
+// import "./passport.js";
+require( "./config.js");
+require( "./passport.js");
+const cookieSession = require("cookie-session");
+const express = require("express");
+const cors = require("cors");
+
+const passport = require("passport");
+
+
 
 const app = express();
 
