@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import avatar from "../images/avatar.png";
+// import avatar from "../images/avatar.png";
 
 const Navbar = ({ user }) => {
   const logout = () => {
@@ -16,9 +16,9 @@ const Navbar = ({ user }) => {
       {user ? (
         <ul className="list">
           <li className="listItem">
-            <img src={avatar} alt="" className="avatar" />
+            <img src={user.photos[0].value} alt="" className="avatar" />
           </li>
-          <li className="listItem">User Name</li>
+          <li className="listItem">{user.displayName}</li>
           <li className="listItem" onClick={logout}>
             Logout
           </li>
