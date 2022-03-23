@@ -6,7 +6,7 @@ import Login from "./pages/Login";
 import "./app.css";
 
 function App() {
-  const user = false;
+  const user = true;
   return (
     <div className="App">
       <Navbar user={user} />
