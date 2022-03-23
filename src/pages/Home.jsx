@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       {posts.map((post) => (
-        <Card post={post} />
+        <Card key={post.id} post={post} />
       ))}
     </div>
   );
