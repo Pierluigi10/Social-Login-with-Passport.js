@@ -1,3 +1,4 @@
+import "./config.js";
 import express from "express";
 import cookieSession from "cookie-session";
 import passport from "passport";
