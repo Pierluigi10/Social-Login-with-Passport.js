@@ -6,10 +6,10 @@ import Login from "./pages/Login";
 import "./app.css";
 
 function App() {
-  const user = true;
+  const user = false;
   return (
     <div className="App">
-      <Navbar />
+      <Navbar user={user} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
