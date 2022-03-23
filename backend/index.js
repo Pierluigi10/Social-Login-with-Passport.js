@@ -1,14 +1,13 @@
 // import "./config.js";
 // import "./passport.js";
-require( "./config.js");
-require( "./passport.js");
+require("./config.js");
+require("./passport.js");
 const cookieSession = require("cookie-session");
 const express = require("express");
 const cors = require("cors");
+const authRoute = require("./routes/auth");
 
 const passport = require("passport");
-
-
 
 const app = express();
 
@@ -31,6 +30,8 @@ app.use(
     credentials: true, // accept incoming  cookies
   })
 );
+
+app.use("/auth", authRoute);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`http://localhost:${port}`));
