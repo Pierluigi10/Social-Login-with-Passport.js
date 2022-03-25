@@ -12,3 +12,21 @@ styled with **CSS**, for the login authentication with social media (Google, Git
 <br />
 
 **Libraries:** Passport.js
+
+
+<br />
+<br />
+<br />
+
+> Mobile Version
+
+![Screenshot Page Mobile](./images/mobile.png)
+
+<br />
+
+> Desktop Version
+
+![Screenshot Page Desktop](./images/desktop.png)
+
+<br />
+<br />
